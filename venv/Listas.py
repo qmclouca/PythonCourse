@@ -9,6 +9,7 @@ podendo ser usadas com qualquer tipo de dado
 #encontrar valor em lista (pode ser qualquer tipo, string, boolean, int, float)
 import random
 
+
 def listas():
     lista1 = [90, 70, 40, 5, 10, 17, 19, 5, 55]
     string_list = ['Rodolfo', 'Lucas', 'Bortoluzzi']

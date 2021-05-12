@@ -7,6 +7,7 @@ Não existem métodos de adição e remoção de elementos
 Tuplas são mais rápidas do que listas
 """
 
+
 def tuples():
     tupla1 = (1, 2, 3, 4, 5, 6)
     print(tupla1)
