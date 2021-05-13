@@ -3,6 +3,7 @@
     são coleções do tipo chave-valor
     são representados por {chaves}
     chaves e valores podem ser de qualquer tipo
+    as chaves não podem ser repetidas
 """
 
 
@@ -44,3 +45,57 @@ def dictionaries():
     # Forma 2
     receita.update({'mai': 500})
     print(receita)
+
+    #Remover dados de um dicionário
+    #Forma 1 é sempre necessário informar a chave caso contrário um KeyError será retornado
+    #O pop remove e retorna o valor
+    receita_popped = receita.pop('mar')
+    print(receita_popped)
+    print(receita)
+    
+    #Forma 2 se a chave não existir será gerado um KeyError
+    del receita['fev']
+    print(receita)
+
+    #Exemplo1 de utilização um carrinho pode ser feita com lista ou tuplas
+    carrinho = []
+    produto1 = ['Playstation 4', 1, 2300.00]
+    produto2 = ['God of war 4', 1, 150.00]
+    carrinho.append(produto1)
+    carrinho.append(produto2)
+    print(carrinho)
+    #usando dicionários ver que fica bem mais detalhado e fácil de identificar cada campo
+    carrinho = []
+    produto1 = {'nome': 'Playstation 4', 'quantidade': 1, 'preco': 2300.00}
+    produto2 = {'nome': 'God of War 4', 'quantidade': 1, 'preco': 150.00}
+    carrinho.append(produto1)
+    carrinho.append(produto2)
+    print(carrinho)
+
+    #métodos para dicionários dir({}) => 'clear', 'copy', 'fromkeys', 'get', 'items', 'keys', 'pop', 'popitem', 'setdefault', 'update', 'values'
+
+    d = dict(a=1, b=2, c=3)
+    print(d)
+    #deep copy
+    novo = d.copy()
+    print(novo)
+    novo['d'] = 4
+    print(d)
+    print(novo)
+    #shallow copy
+    novo2 = d
+    print(novo2)
+    novo2['d'] = 4
+    print(d)
+    print(novo2)
+    d.clear()
+    print(d)
+    #forma não usual de criação de dicionarios
+    outro = {}.fromkeys('a','b')
+    print(outro)
+    usuario = {}.fromkeys(['nome','pontos','email','profile'], 'desconhecido')
+    print(usuario)
+    stringtest = {}.fromkeys('teste','valor')
+    print(stringtest)
+    rangetest = {}.fromkeys(range(1,11),'novo')
+    print(rangetest)
