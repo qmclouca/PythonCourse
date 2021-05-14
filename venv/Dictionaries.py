@@ -99,3 +99,21 @@ def dictionaries():
     print(stringtest)
     rangetest = {}.fromkeys(range(1,11),'novo')
     print(rangetest)
+    #imprimir as chave
+    print(rangetest.keys())
+    #imprimir os valores
+    print(rangetest.values())
+    #iterando com chaves
+    for chave in rangetest.keys():
+        print(rangetest[chave])
+    #desempacotamento de dicionários
+    receita = {'jan': 100, 'fev': 250, 'mar': 400}
+    print(receita)
+    print(receita.items())
+    for chave, valor in receita.items():
+        print(f'chave={chave} e valor={valor}')
+    #funções básicas de dicionários
+    print(sum(receita.values()))
+    print(max(receita.values()))
+    print(min(receita.values()))
+    print(len(receita))
