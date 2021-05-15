@@ -3,7 +3,6 @@ import Tuplas
 import Dictionaries
 
 try:
-
     #Listas.listas()
     #Tuplas.tuples()
 
