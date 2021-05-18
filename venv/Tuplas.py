@@ -12,25 +12,26 @@ def tuples():
     tupla1 = (1, 2, 3, 4, 5, 6)
     print(tupla1)
     print(type(tupla1))
-    #gerar tuplas com a função range
+    # gerar tuplas com a função range
     tupla2 = tuple(range(2,10,3)) # gerar no intervalo de 2 a 10 com passo 3
     print(tupla2)
-    #Desempacotamento de tuplas
+    # Desempacotamento de tuplas
     tupla3 = ['Rodolfo', 'Lucas', 'Bortoluzzi']
     first_name, middle_name, last_name = tupla3
     print(first_name)
     print(middle_name)
     print(last_name)
+    # Funções básicas
     print(f'Soma dos elementos da tupla1: {sum(tupla1)}')
     print(f'Maior elemento da tupla1: {max(tupla1)}')
     print(f'Menor elemento da tupla1: {min(tupla1)}')
     print(f'Tamanho da tupla1: {len(tupla1)}')
-    #concatenação de tuplas
+    # concatenação de tuplas
     tupla4 = tupla1 + tupla2
     print(tupla4)
-    #verificar se um elemento está em uma tupla
+    # verificar se um elemento está em uma tupla
     print(3 in tupla1)
-    #iterando
+    # iterando
     for n in tupla1:
         print(n)
 
